@@ -1,0 +1,21 @@
+{
+  "name": "00-welcome",
+  "version": "1.0.0",
+  "description": "Welcome to React & Next.js Course - Setup and Introduction",
+  "scripts": {
+    "test": "echo \"No tests for welcome section\" && exit 0",
+    "start": "open src/index.html"
+  },
+  "keywords": ["react", "nextjs", "course", "welcome"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "next": "^13.4.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "prettier": "^3.0.0"
+  }
+}
