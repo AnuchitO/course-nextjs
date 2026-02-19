@@ -4,23 +4,27 @@ import { act, render, screen, waitFor } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import Users from './Users'
 
-jest.mock('./userService')
+import { mock, describe, test, expect, afterEach } from "bun:test"
 
-const mockFetchUsers = jest.requireMock('./userService').fetchUsers
+const mockFetchUsers = mock(() => Promise.resolve([]))
+
+mock.module("./userService", () => ({
+    fetchUsers: mockFetchUsers
+}))
 
 describe('Users', () => {
     afterEach(() => {
-        jest.clearAllMocks()
+        mockFetchUsers.mockClear()
     })
 
     test('should show loading state initially', async () => {
         // Mock the promise that never resolves to keep it in loading state
-        mockFetchUsers.mockImplementation(() => new Promise(() => {}))
+        mockFetchUsers.mockImplementation(() => new Promise(() => { }))
 
         render(<Users />)
 
         await waitFor(() => {
-                expect(screen.getByText('Loading...')).toBeInTheDocument()
+            expect(screen.getByText('Loading...')).toBeInTheDocument()
         })
     })
 
