@@ -24,13 +24,13 @@ type State = {
 };
 
 export class Hi extends React.Component<Props, State> {
-    constructor(props: Props) {
-        super(props);
-        this.state = {
-            count: 0,
-            age: props.age // Initialize state with props
-        };
-    }
+  constructor(props: Props) {
+    super(props);
+    this.state = {
+      count: 0,
+      age: props.age // Initialize state with props
+    };
+  }
 
   increaseCount = () => {
     this.setState((prevState) => ({ count: prevState.count + 1 }));

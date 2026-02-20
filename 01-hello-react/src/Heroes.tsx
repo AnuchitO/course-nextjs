@@ -18,8 +18,8 @@ const Hero = ({ name, power, powerName }: HeroProps) => {
 }
 
 type HeroState = {
-    heroes: HeroProps[];
-    isLoading: boolean;
+  heroes: HeroProps[];
+  isLoading: boolean;
 }
 
 export const Heroes = () => {
@@ -28,95 +28,95 @@ export const Heroes = () => {
 
   useEffect(() => {
     fetch('http://localhost:2727/heroes')
-        .then(response => response.json())
-        .then(data => {
-          setHeroes(data);
-        })
-        .catch(error => {
-          console.error('Error fetching heroes:', error);
-        })
-        .finally(() => {
-          setIsLoading(false);
-        });
+      .then(response => response.json())
+      .then(data => {
+        setHeroes(data);
+      })
+      .catch(error => {
+        console.error('Error fetching heroes:', error);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
 
-        console.log('Heroes Once: ');
+    console.log('Heroes Once: ');
   }, []);
 
   useEffect(() => {
-    console.log('Heroes updated:xxxx' );
+    console.log('Heroes updated:xxxx');
   })
 
   return (
     <>
       {
         isLoading ? <p>Loading heroes...</p> :
-        <div className="heroes-list">
-          <h1>Heroes List</h1>
-          {
-            heroes.map((hero, index) => (
-              <Hero key={index} name={hero.name} power={hero.power} powerName={hero.powerName} />
-            ))
-          }
-        </div>
+          <div className="heroes-list">
+            <h1>Heroes List</h1>
+            {
+              heroes.map((hero, index) => (
+                <Hero key={index} name={hero.name} power={hero.power} powerName={hero.powerName} />
+              ))
+            }
+          </div>
 
 
       }
 
-       <button onClick={() => {
-          const newHero: HeroProps = {
-            name: 'New Hero',
-            power: 100,
-            powerName: 'Super Strength'
-          };
-          setHeroes([...heroes, newHero]);
-        }}>
-          Add Hero
-        </button>
+      <button onClick={() => {
+        const newHero: HeroProps = {
+          name: 'New Hero',
+          power: 100,
+          powerName: 'Super Strength'
+        };
+        setHeroes([...heroes, newHero]);
+      }}>
+        Add Hero
+      </button>
     </>
   );
 }
 
 export class Heroesx extends React.Component<{}, HeroState> {
 
-    constructor(props: {}) {
-        super(props);
-        // Initialize state if needed
-        this.state = {
-            heroes: [],
-            isLoading: true
-        };
-    }
+  constructor(props: {}) {
+    super(props);
+    // Initialize state if needed
+    this.state = {
+      heroes: [],
+      isLoading: true
+    };
+  }
 
-    componentDidMount(): void {
-      fetch('http://localhost:2727/heroes')
-        .then(response => response.json())
-        .then(data => {
-          this.setState({ heroes: data });
-        })
-        .catch(error => {
-          console.error('Error fetching heroes:', error);
-        })
-        .finally(() => {
-          this.setState({ isLoading: false });
-        });
-    }
+  componentDidMount(): void {
+    fetch('http://localhost:2727/heroes')
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ heroes: data });
+      })
+      .catch(error => {
+        console.error('Error fetching heroes:', error);
+      })
+      .finally(() => {
+        this.setState({ isLoading: false });
+      });
+  }
 
   render() {
     return (
-        <>
-          {
+      <>
+        {
           this.state.isLoading ? <p>Loading heroes...</p> :
 
-          <div className="heroes-list">
-            <h1>Heroes List</h1>
-            {
-                this.state.heroes.map((hero, index) =>(
-                    <Hero key={index} name={hero.name} power={hero.power} powerName={hero.powerName} />
-                  ))
-            }
-          </div>
-          }
-        </>
-        );
+            <div className="heroes-list">
+              <h1>Heroes List</h1>
+              {
+                this.state.heroes.map((hero, index) => (
+                  <Hero key={index} name={hero.name} power={hero.power} powerName={hero.powerName} />
+                ))
+              }
+            </div>
+        }
+      </>
+    );
   }
 }
