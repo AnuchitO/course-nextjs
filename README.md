@@ -39,3 +39,13 @@
 ```bash
 bun create next-app@latest my-app --yes
 ```
+
+
+## Create a new React app
+
+```bash
+bun create react@latest my-app --yes
+
+# more configuration with vite
+bun create vite@latest my-app
+```
