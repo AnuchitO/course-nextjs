@@ -20,6 +20,7 @@ function App() {
       <span>airline_seat_recline_normal</span>
       <span>Economy</span>
       <button>Select</button>
+      <span>arrow_forward</span>
     </>
   )
 }
