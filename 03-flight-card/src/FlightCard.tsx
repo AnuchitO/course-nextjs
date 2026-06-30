@@ -6,6 +6,7 @@ function FlightCard() {
   const priceSuffix = "/person"
   const departureTime = "07:00"
   const originCode = "BKK"
+  const duration = "2h 30m"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -36,7 +37,7 @@ function FlightCard() {
             <p className="text-label-md text-on-surface-variant">{originCode}</p>
           </div>
           <div className="flex-[2] flex flex-col items-center px-md">
-            <p className="text-label-sm text-on-surface-variant mb-1">2h 30m</p>
+            <p className="text-label-sm text-on-surface-variant mb-1">{duration}</p>
             <div className="w-full flex items-center">
               <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
               <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
