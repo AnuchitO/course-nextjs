@@ -2,6 +2,7 @@ function FlightCard() {
   const takeoffIcon = "flight_takeoff"
   const airline = "Qoomlee"
   const flightNumber = "QM102"
+  const price = "฿3,920.00"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -20,7 +21,7 @@ function FlightCard() {
           <div className="flex flex-col items-end gap-xs shrink-0">
             <div className="text-right">
               <p className="text-headline-md text-primary">
-                ฿3,920.00 <span className="text-label-sm text-on-surface-variant">/person</span>
+                {price} <span className="text-label-sm text-on-surface-variant">/person</span>
               </p>
             </div>
           </div>
