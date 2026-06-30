@@ -5,7 +5,9 @@ function App() {
   return (
     <>
       {/* Flight Card */}
-      <FlightCard />
+      <div className="max-w-7xl mx-auto px-md">
+        <FlightCard />
+      </div>
     </>
   )
 }
