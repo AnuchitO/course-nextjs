@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon, cabinClass, buttonLabel }) {
-  const selectIcon = "arrow_forward"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon, cabinClass, buttonLabel, selectIcon }) {
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
