@@ -1,13 +1,114 @@
 import FlightCard from './FlightCard'
 
+const flights = [
+    {
+      takeoffIcon: "flight_takeoff",
+      airline: "Qoomlee",
+      flightNumber: "QM102",
+      price: "฿3,920.00",
+      priceSuffix: "/person",
+      departureTime: "07:00",
+      originCode: "BKK",
+      duration: "2h 30m",
+      routeIcon: "flight",
+      stopLabel: "Non-stop",
+      arrivalTime: "09:30",
+      destinationCode: "SIN",
+      luggageIcon: "luggage",
+      baggageAllowance: "20kg",
+      seatIcon: "airline_seat_recline_normal",
+      cabinClass: "Economy",
+      buttonLabel: "Select",
+      selectIcon: "arrow_forward",
+    },
+    {
+      takeoffIcon: "flight_takeoff",
+      airline: "Qoomlee",
+      flightNumber: "QM118",
+      price: "฿7,450.00",
+      priceSuffix: "/person",
+      departureTime: "09:15",
+      originCode: "BKK",
+      duration: "2h 25m",
+      routeIcon: "flight",
+      stopLabel: "Non-stop",
+      arrivalTime: "11:40",
+      destinationCode: "SIN",
+      luggageIcon: "luggage",
+      baggageAllowance: "30kg",
+      seatIcon: "airline_seat_recline_normal",
+      cabinClass: "Business",
+      buttonLabel: "Select",
+      selectIcon: "arrow_forward",
+    },
+    {
+      takeoffIcon: "flight_takeoff",
+      airline: "Qoomlee",
+      flightNumber: "QM240",
+      price: "฿2,980.00",
+      priceSuffix: "/person",
+      departureTime: "11:50",
+      originCode: "BKK",
+      duration: "4h 05m",
+      routeIcon: "flight",
+      stopLabel: "1 stop",
+      arrivalTime: "15:55",
+      destinationCode: "SIN",
+      luggageIcon: "luggage",
+      baggageAllowance: "15kg",
+      seatIcon: "airline_seat_recline_normal",
+      cabinClass: "Economy",
+      buttonLabel: "Select",
+      selectIcon: "arrow_forward",
+    },
+    {
+      takeoffIcon: "flight_takeoff",
+      airline: "Qoomlee",
+      flightNumber: "QM356",
+      price: "฿4,150.00",
+      priceSuffix: "/person",
+      departureTime: "17:20",
+      originCode: "BKK",
+      duration: "2h 35m",
+      routeIcon: "flight",
+      stopLabel: "Non-stop",
+      arrivalTime: "19:55",
+      destinationCode: "SIN",
+      luggageIcon: "luggage",
+      baggageAllowance: "20kg",
+      seatIcon: "airline_seat_recline_normal",
+      cabinClass: "Economy",
+      buttonLabel: "Select",
+      selectIcon: "arrow_forward",
+    },
+    {
+      takeoffIcon: "flight_takeoff",
+      airline: "Qoomlee",
+      flightNumber: "QM482",
+      price: "฿5,600.00",
+      priceSuffix: "/person",
+      departureTime: "22:40",
+      originCode: "BKK",
+      duration: "2h 20m",
+      routeIcon: "flight",
+      stopLabel: "Non-stop",
+      arrivalTime: "01:00",
+      destinationCode: "SIN",
+      luggageIcon: "luggage",
+      baggageAllowance: "25kg",
+      seatIcon: "airline_seat_recline_normal",
+      cabinClass: "Premium Economy",
+      buttonLabel: "Select",
+      selectIcon: "arrow_forward",
+    },
+]
+
 function FlightList() {
   return (
     <div className="flex flex-col gap-md">
-      <FlightCard />
-      <FlightCard />
-      <FlightCard />
-      <FlightCard />
-      <FlightCard />
+      {flights.map((flight) => (
+        <FlightCard key={flight.flightNumber} {...flight} />
+      ))}
     </div>
   )
 }
