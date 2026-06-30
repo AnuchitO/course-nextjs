@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel }) {
-  const arrivalTime = "09:30"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime }) {
   const destinationCode = "SIN"
   const luggageIcon = "luggage"
   const baggageAllowance = "20kg"
