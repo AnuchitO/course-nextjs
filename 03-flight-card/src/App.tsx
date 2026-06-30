@@ -42,19 +42,22 @@ function App() {
           <p className="text-label-md text-on-surface-variant">SIN</p>
         </div>
       </div>
-      <div className="flex gap-md text-on-surface-variant">
-        <div className="flex items-center gap-xs">
-          <span className="material-symbols-outlined text-[18px]">luggage</span>
-          <span className="text-label-sm">20kg</span>
+      {/* Footer */}
+      <div className="flex items-center justify-between pt-md border-t border-outline-variant/30">
+        <div className="flex gap-md text-on-surface-variant">
+          <div className="flex items-center gap-xs">
+            <span className="material-symbols-outlined text-[18px]">luggage</span>
+            <span className="text-label-sm">20kg</span>
+          </div>
+          <div className="flex items-center gap-xs">
+            <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
+            <span className="text-label-sm capitalize">Economy</span>
+          </div>
         </div>
-        <div className="flex items-center gap-xs">
-          <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
-          <span className="text-label-sm capitalize">Economy</span>
-        </div>
+        <button className="bg-primary-container text-on-primary-container px-lg py-2 rounded-xl text-label-md flex items-center gap-xs active:scale-95 transition-all shadow-sm">
+          Select <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+        </button>
       </div>
-      <button className="bg-primary-container text-on-primary-container px-lg py-2 rounded-xl text-label-md flex items-center gap-xs active:scale-95 transition-all shadow-sm">
-        Select <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
-      </button>
     </>
   )
 }
