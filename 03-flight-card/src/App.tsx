@@ -12,10 +12,12 @@ function App() {
           <p className="text-label-sm text-on-surface-variant">QM102</p>
         </div>
       </div>
-      <div className="text-right">
-        <p className="text-headline-md text-primary">
-          ฿3,920.00 <span className="text-label-sm text-on-surface-variant">/person</span>
-        </p>
+      <div className="flex flex-col items-end gap-xs shrink-0">
+        <div className="text-right">
+          <p className="text-headline-md text-primary">
+            ฿3,920.00 <span className="text-label-sm text-on-surface-variant">/person</span>
+          </p>
+        </div>
       </div>
       <p>07:00</p>
       <p>BKK</p>
