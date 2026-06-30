@@ -1,6 +1,7 @@
 function FlightCard() {
   const takeoffIcon = "flight_takeoff"
   const airline = "Qoomlee"
+  const flightNumber = "QM102"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -13,7 +14,7 @@ function FlightCard() {
             </div>
             <div className="min-w-0">
               <h3 className="text-headline-md">{airline}</h3>
-              <p className="text-label-sm text-on-surface-variant">QM102</p>
+              <p className="text-label-sm text-on-surface-variant">{flightNumber}</p>
             </div>
           </div>
           <div className="flex flex-col items-end gap-xs shrink-0">
