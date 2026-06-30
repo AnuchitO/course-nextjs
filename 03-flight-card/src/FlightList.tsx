@@ -7,6 +7,7 @@ function FlightList() {
       <FlightCard />
       <FlightCard />
       <FlightCard />
+      <FlightCard />
     </>
   )
 }
