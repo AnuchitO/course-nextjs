@@ -18,6 +18,7 @@ function App() {
       <span>luggage</span>
       <span>20kg</span>
       <span>airline_seat_recline_normal</span>
+      <span>Economy</span>
     </>
   )
 }
