@@ -1,4 +1,4 @@
-import FlightCard from './FlightCard'
+import FlightList from './FlightList'
 
 function App() {
 
@@ -6,7 +6,7 @@ function App() {
     <>
       {/* Flight Card */}
       <div className="max-w-7xl mx-auto px-md">
-        <FlightCard />
+        <FlightList />
       </div>
     </>
   )
