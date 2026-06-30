@@ -6,8 +6,10 @@ function App() {
       <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
         <span className="material-symbols-outlined text-secondary text-3xl">flight_takeoff</span>
       </div>
-      <h3>Qoomlee</h3>
-      <p>QM102</p>
+      <div className="min-w-0">
+        <h3 className="text-headline-md">Qoomlee</h3>
+        <p className="text-label-sm text-on-surface-variant">QM102</p>
+      </div>
       <p>฿3,920.00</p>
       <span>/person</span>
       <p>07:00</p>
