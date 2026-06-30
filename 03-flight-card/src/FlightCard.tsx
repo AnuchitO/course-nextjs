@@ -14,6 +14,7 @@ function FlightCard() {
   const luggageIcon = "luggage"
   const baggageAllowance = "20kg"
   const seatIcon = "airline_seat_recline_normal"
+  const cabinClass = "Economy"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -66,7 +67,7 @@ function FlightCard() {
             </div>
             <div className="flex items-center gap-xs">
               <span className="material-symbols-outlined text-[18px]">{seatIcon}</span>
-              <span className="text-label-sm capitalize">Economy</span>
+              <span className="text-label-sm capitalize">{cabinClass}</span>
             </div>
           </div>
           <button className="bg-primary-container text-on-primary-container px-lg py-2 rounded-xl text-label-md flex items-center gap-xs active:scale-95 transition-all shadow-sm">
