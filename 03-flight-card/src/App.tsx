@@ -22,22 +22,25 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="flex-1">
-        <p className="text-headline-md text-on-surface">07:00</p>
-        <p className="text-label-md text-on-surface-variant">BKK</p>
-      </div>
-      <div className="flex-[2] flex flex-col items-center px-md">
-        <p className="text-label-sm text-on-surface-variant mb-1">2h 30m</p>
-        <div className="w-full flex items-center">
-          <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
-          <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
-          <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+      {/* Journey */}
+      <div className="flex items-center justify-between">
+        <div className="flex-1">
+          <p className="text-headline-md text-on-surface">07:00</p>
+          <p className="text-label-md text-on-surface-variant">BKK</p>
         </div>
-        <span className="bg-surface-container-high text-on-surface-variant text-[10px] px-2 py-0.5 rounded font-medium mt-1">Non-stop</span>
-      </div>
-      <div className="flex-1 text-right">
-        <p className="text-headline-md text-on-surface">09:30</p>
-        <p className="text-label-md text-on-surface-variant">SIN</p>
+        <div className="flex-[2] flex flex-col items-center px-md">
+          <p className="text-label-sm text-on-surface-variant mb-1">2h 30m</p>
+          <div className="w-full flex items-center">
+            <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+            <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
+            <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+          </div>
+          <span className="bg-surface-container-high text-on-surface-variant text-[10px] px-2 py-0.5 rounded font-medium mt-1">Non-stop</span>
+        </div>
+        <div className="flex-1 text-right">
+          <p className="text-headline-md text-on-surface">09:30</p>
+          <p className="text-label-md text-on-surface-variant">SIN</p>
+        </div>
       </div>
       <span>luggage</span>
       <span>20kg</span>
