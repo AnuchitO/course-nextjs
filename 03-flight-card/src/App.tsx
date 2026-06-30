@@ -42,8 +42,10 @@ function App() {
           <p className="text-label-md text-on-surface-variant">SIN</p>
         </div>
       </div>
-      <span>luggage</span>
-      <span>20kg</span>
+      <div className="flex items-center gap-xs">
+        <span className="material-symbols-outlined text-[18px]">luggage</span>
+        <span className="text-label-sm">20kg</span>
+      </div>
       <span>airline_seat_recline_normal</span>
       <span>Economy</span>
       <button>Select</button>
