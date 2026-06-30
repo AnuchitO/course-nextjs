@@ -17,6 +17,7 @@ function App() {
       <p>SIN</p>
       <span>luggage</span>
       <span>20kg</span>
+      <span>airline_seat_recline_normal</span>
     </>
   )
 }
