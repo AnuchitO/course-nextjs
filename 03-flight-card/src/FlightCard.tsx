@@ -4,6 +4,7 @@ function FlightCard() {
   const flightNumber = "QM102"
   const price = "฿3,920.00"
   const priceSuffix = "/person"
+  const departureTime = "07:00"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -30,7 +31,7 @@ function FlightCard() {
         {/* Journey */}
         <div className="flex items-center justify-between">
           <div className="flex-1">
-            <p className="text-headline-md text-on-surface">07:00</p>
+            <p className="text-headline-md text-on-surface">{departureTime}</p>
             <p className="text-label-md text-on-surface-variant">BKK</p>
           </div>
           <div className="flex-[2] flex flex-col items-center px-md">
