@@ -26,13 +26,15 @@ function App() {
         <p className="text-headline-md text-on-surface">07:00</p>
         <p className="text-label-md text-on-surface-variant">BKK</p>
       </div>
-      <p>2h 30m</p>
-      <div className="w-full flex items-center">
-        <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
-        <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
-        <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+      <div className="flex-[2] flex flex-col items-center px-md">
+        <p className="text-label-sm text-on-surface-variant mb-1">2h 30m</p>
+        <div className="w-full flex items-center">
+          <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+          <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
+          <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+        </div>
+        <span className="bg-surface-container-high text-on-surface-variant text-[10px] px-2 py-0.5 rounded font-medium mt-1">Non-stop</span>
       </div>
-      <span>Non-stop</span>
       <p>09:30</p>
       <p>SIN</p>
       <span>luggage</span>
