@@ -12,8 +12,11 @@ function App() {
           <p className="text-label-sm text-on-surface-variant">QM102</p>
         </div>
       </div>
-      <p>฿3,920.00</p>
-      <span>/person</span>
+      <div className="text-right">
+        <p className="text-headline-md text-primary">
+          ฿3,920.00 <span className="text-label-sm text-on-surface-variant">/person</span>
+        </p>
+      </div>
       <p>07:00</p>
       <p>BKK</p>
       <p>2h 30m</p>
