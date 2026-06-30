@@ -42,13 +42,15 @@ function App() {
           <p className="text-label-md text-on-surface-variant">SIN</p>
         </div>
       </div>
-      <div className="flex items-center gap-xs">
-        <span className="material-symbols-outlined text-[18px]">luggage</span>
-        <span className="text-label-sm">20kg</span>
-      </div>
-      <div className="flex items-center gap-xs">
-        <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
-        <span className="text-label-sm capitalize">Economy</span>
+      <div className="flex gap-md text-on-surface-variant">
+        <div className="flex items-center gap-xs">
+          <span className="material-symbols-outlined text-[18px]">luggage</span>
+          <span className="text-label-sm">20kg</span>
+        </div>
+        <div className="flex items-center gap-xs">
+          <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
+          <span className="text-label-sm capitalize">Economy</span>
+        </div>
       </div>
       <button>Select</button>
       <span>arrow_forward</span>
