@@ -7,6 +7,7 @@ function FlightCard() {
   const departureTime = "07:00"
   const originCode = "BKK"
   const duration = "2h 30m"
+  const routeIcon = "flight"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -40,7 +41,7 @@ function FlightCard() {
             <p className="text-label-sm text-on-surface-variant mb-1">{duration}</p>
             <div className="w-full flex items-center">
               <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
-              <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
+              <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">{routeIcon}</span>
               <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
             </div>
             <span className="bg-surface-container-high text-on-surface-variant text-[10px] px-2 py-0.5 rounded font-medium mt-1">Non-stop</span>
