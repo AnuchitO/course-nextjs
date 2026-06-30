@@ -16,6 +16,7 @@ function FlightCard() {
   const seatIcon = "airline_seat_recline_normal"
   const cabinClass = "Economy"
   const buttonLabel = "Select"
+  const selectIcon = "arrow_forward"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -72,7 +73,7 @@ function FlightCard() {
             </div>
           </div>
           <button className="bg-primary-container text-on-primary-container px-lg py-2 rounded-xl text-label-md flex items-center gap-xs active:scale-95 transition-all shadow-sm">
-            {buttonLabel} <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+            {buttonLabel} <span className="material-symbols-outlined text-[18px]">{selectIcon}</span>
           </button>
         </div>
       </div>
