@@ -22,8 +22,10 @@ function App() {
           </div>
         </div>
       </div>
-      <p>07:00</p>
-      <p>BKK</p>
+      <div className="flex-1">
+        <p className="text-headline-md text-on-surface">07:00</p>
+        <p className="text-label-md text-on-surface-variant">BKK</p>
+      </div>
       <p>2h 30m</p>
       <span>flight</span>
       <span>Non-stop</span>
