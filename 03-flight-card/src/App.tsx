@@ -3,20 +3,23 @@ function App() {
   return (
     <>
       {/* Flight Card */}
-      <div className="flex items-center gap-md min-w-0">
-        <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
-          <span className="material-symbols-outlined text-secondary text-3xl">flight_takeoff</span>
+      {/* Airline & Price */}
+      <div className="flex justify-between items-start gap-sm">
+        <div className="flex items-center gap-md min-w-0">
+          <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
+            <span className="material-symbols-outlined text-secondary text-3xl">flight_takeoff</span>
+          </div>
+          <div className="min-w-0">
+            <h3 className="text-headline-md">Qoomlee</h3>
+            <p className="text-label-sm text-on-surface-variant">QM102</p>
+          </div>
         </div>
-        <div className="min-w-0">
-          <h3 className="text-headline-md">Qoomlee</h3>
-          <p className="text-label-sm text-on-surface-variant">QM102</p>
-        </div>
-      </div>
-      <div className="flex flex-col items-end gap-xs shrink-0">
-        <div className="text-right">
-          <p className="text-headline-md text-primary">
-            ฿3,920.00 <span className="text-label-sm text-on-surface-variant">/person</span>
-          </p>
+        <div className="flex flex-col items-end gap-xs shrink-0">
+          <div className="text-right">
+            <p className="text-headline-md text-primary">
+              ฿3,920.00 <span className="text-label-sm text-on-surface-variant">/person</span>
+            </p>
+          </div>
         </div>
       </div>
       <p>07:00</p>
