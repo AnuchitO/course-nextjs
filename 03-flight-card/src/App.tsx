@@ -15,6 +15,7 @@ function App() {
       <span>Non-stop</span>
       <p>09:30</p>
       <p>SIN</p>
+      <span>luggage</span>
     </>
   )
 }
