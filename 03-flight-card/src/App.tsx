@@ -35,8 +35,10 @@ function App() {
         </div>
         <span className="bg-surface-container-high text-on-surface-variant text-[10px] px-2 py-0.5 rounded font-medium mt-1">Non-stop</span>
       </div>
-      <p>09:30</p>
-      <p>SIN</p>
+      <div className="flex-1 text-right">
+        <p className="text-headline-md text-on-surface">09:30</p>
+        <p className="text-label-md text-on-surface-variant">SIN</p>
+      </div>
       <span>luggage</span>
       <span>20kg</span>
       <span>airline_seat_recline_normal</span>
