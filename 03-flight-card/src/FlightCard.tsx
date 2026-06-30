@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance }) {
-  const seatIcon = "airline_seat_recline_normal"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon }) {
   const cabinClass = "Economy"
   const buttonLabel = "Select"
   const selectIcon = "arrow_forward"
