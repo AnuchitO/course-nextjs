@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon }) {
-  const stopLabel = "Non-stop"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel }) {
   const arrivalTime = "09:30"
   const destinationCode = "SIN"
   const luggageIcon = "luggage"
