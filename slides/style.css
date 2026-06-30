@@ -1,0 +1,6 @@
+/* All slide titles */
+.slidev-layout h1 {
+    font-family: "JetBrains Mono", monospace;
+    font-size: 1.6em;
+    margin-bottom: 0.3em;
+}
