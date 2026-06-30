@@ -10,6 +10,7 @@ function FlightCard() {
   const routeIcon = "flight"
   const stopLabel = "Non-stop"
   const arrivalTime = "09:30"
+  const destinationCode = "SIN"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -50,7 +51,7 @@ function FlightCard() {
           </div>
           <div className="flex-1 text-right">
             <p className="text-headline-md text-on-surface">{arrivalTime}</p>
-            <p className="text-label-md text-on-surface-variant">SIN</p>
+            <p className="text-label-md text-on-surface-variant">{destinationCode}</p>
           </div>
         </div>
         {/* Footer */}
