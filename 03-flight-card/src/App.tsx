@@ -14,6 +14,7 @@ function App() {
       <span>flight</span>
       <span>Non-stop</span>
       <p>09:30</p>
+      <p>SIN</p>
     </>
   )
 }
