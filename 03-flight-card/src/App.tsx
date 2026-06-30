@@ -9,6 +9,7 @@ function App() {
       <p>฿3,920.00</p>
       <span>/person</span>
       <p>07:00</p>
+      <p>BKK</p>
     </>
   )
 }
