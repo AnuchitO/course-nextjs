@@ -3,6 +3,7 @@ function App() {
   return (
     <>
       {/* Flight Card */}
+      <span>flight_takeoff</span>
     </>
   )
 }
