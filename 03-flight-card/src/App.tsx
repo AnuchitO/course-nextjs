@@ -27,7 +27,11 @@ function App() {
         <p className="text-label-md text-on-surface-variant">BKK</p>
       </div>
       <p>2h 30m</p>
-      <span>flight</span>
+      <div className="w-full flex items-center">
+        <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+        <span className="material-symbols-outlined text-primary text-[20px] rotate-90 mx-1">flight</span>
+        <div className="flex-1 border-t-2 border-dashed border-outline-variant"></div>
+      </div>
       <span>Non-stop</span>
       <p>09:30</p>
       <p>SIN</p>
