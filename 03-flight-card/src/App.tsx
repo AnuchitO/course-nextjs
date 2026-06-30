@@ -8,6 +8,7 @@ function App() {
       <p>QM102</p>
       <p>฿3,920.00</p>
       <span>/person</span>
+      <p>07:00</p>
     </>
   )
 }
