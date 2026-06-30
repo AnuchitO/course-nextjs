@@ -12,6 +12,7 @@ function FlightCard() {
   const arrivalTime = "09:30"
   const destinationCode = "SIN"
   const luggageIcon = "luggage"
+  const baggageAllowance = "20kg"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -60,7 +61,7 @@ function FlightCard() {
           <div className="flex gap-md text-on-surface-variant">
             <div className="flex items-center gap-xs">
               <span className="material-symbols-outlined text-[18px]">{luggageIcon}</span>
-              <span className="text-label-sm">20kg</span>
+              <span className="text-label-sm">{baggageAllowance}</span>
             </div>
             <div className="flex items-center gap-xs">
               <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
