@@ -12,6 +12,7 @@ function App() {
       <p>BKK</p>
       <p>2h 30m</p>
       <span>flight</span>
+      <span>Non-stop</span>
     </>
   )
 }
