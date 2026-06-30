@@ -13,6 +13,7 @@ function FlightCard() {
   const destinationCode = "SIN"
   const luggageIcon = "luggage"
   const baggageAllowance = "20kg"
+  const seatIcon = "airline_seat_recline_normal"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -64,7 +65,7 @@ function FlightCard() {
               <span className="text-label-sm">{baggageAllowance}</span>
             </div>
             <div className="flex items-center gap-xs">
-              <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
+              <span className="material-symbols-outlined text-[18px]">{seatIcon}</span>
               <span className="text-label-sm capitalize">Economy</span>
             </div>
           </div>
