@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode }) {
-  const duration = "2h 30m"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration }) {
   const routeIcon = "flight"
   const stopLabel = "Non-stop"
   const arrivalTime = "09:30"
