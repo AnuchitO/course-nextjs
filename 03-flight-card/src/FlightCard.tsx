@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime }) {
-  const destinationCode = "SIN"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode }) {
   const luggageIcon = "luggage"
   const baggageAllowance = "20kg"
   const seatIcon = "airline_seat_recline_normal"
