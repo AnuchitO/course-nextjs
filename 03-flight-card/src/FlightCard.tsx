@@ -11,6 +11,7 @@ function FlightCard() {
   const stopLabel = "Non-stop"
   const arrivalTime = "09:30"
   const destinationCode = "SIN"
+  const luggageIcon = "luggage"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -58,7 +59,7 @@ function FlightCard() {
         <div className="flex items-center justify-between pt-md border-t border-outline-variant/30">
           <div className="flex gap-md text-on-surface-variant">
             <div className="flex items-center gap-xs">
-              <span className="material-symbols-outlined text-[18px]">luggage</span>
+              <span className="material-symbols-outlined text-[18px]">{luggageIcon}</span>
               <span className="text-label-sm">20kg</span>
             </div>
             <div className="flex items-center gap-xs">
