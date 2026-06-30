@@ -16,6 +16,7 @@ function App() {
       <p>09:30</p>
       <p>SIN</p>
       <span>luggage</span>
+      <span>20kg</span>
     </>
   )
 }
