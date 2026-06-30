@@ -1,4 +1,25 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon, cabinClass, buttonLabel, selectIcon }) {
+interface Props {
+  takeoffIcon: string
+  airline: string
+  flightNumber: string
+  price: string
+  priceSuffix: string
+  departureTime: string
+  originCode: string
+  duration: string
+  routeIcon: string
+  stopLabel: string
+  arrivalTime: string
+  destinationCode: string
+  luggageIcon: string
+  baggageAllowance: string
+  seatIcon: string
+  cabinClass: string
+  buttonLabel: string
+  selectIcon: string
+}
+
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon, cabinClass, buttonLabel, selectIcon }: Props) {
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
