@@ -9,6 +9,7 @@ function FlightCard() {
   const duration = "2h 30m"
   const routeIcon = "flight"
   const stopLabel = "Non-stop"
+  const arrivalTime = "09:30"
 
   return (
     <section className="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm p-md transition-all hover:shadow-md hover:border-primary/30 group">
@@ -48,7 +49,7 @@ function FlightCard() {
             <span className="bg-surface-container-high text-on-surface-variant text-[10px] px-2 py-0.5 rounded font-medium mt-1">{stopLabel}</span>
           </div>
           <div className="flex-1 text-right">
-            <p className="text-headline-md text-on-surface">09:30</p>
+            <p className="text-headline-md text-on-surface">{arrivalTime}</p>
             <p className="text-label-md text-on-surface-variant">SIN</p>
           </div>
         </div>
