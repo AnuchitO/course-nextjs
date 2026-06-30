@@ -1,5 +1,4 @@
-function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon, cabinClass }) {
-  const buttonLabel = "Select"
+function FlightCard({ takeoffIcon, airline, flightNumber, price, priceSuffix, departureTime, originCode, duration, routeIcon, stopLabel, arrivalTime, destinationCode, luggageIcon, baggageAllowance, seatIcon, cabinClass, buttonLabel }) {
   const selectIcon = "arrow_forward"
 
   return (
