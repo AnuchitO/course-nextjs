@@ -10,6 +10,7 @@ function App() {
       <span>/person</span>
       <p>07:00</p>
       <p>BKK</p>
+      <p>2h 30m</p>
     </>
   )
 }
