@@ -3,12 +3,14 @@ function App() {
   return (
     <>
       {/* Flight Card */}
-      <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
-        <span className="material-symbols-outlined text-secondary text-3xl">flight_takeoff</span>
-      </div>
-      <div className="min-w-0">
-        <h3 className="text-headline-md">Qoomlee</h3>
-        <p className="text-label-sm text-on-surface-variant">QM102</p>
+      <div className="flex items-center gap-md min-w-0">
+        <div className="w-12 h-12 bg-secondary/10 rounded-lg flex items-center justify-center shrink-0">
+          <span className="material-symbols-outlined text-secondary text-3xl">flight_takeoff</span>
+        </div>
+        <div className="min-w-0">
+          <h3 className="text-headline-md">Qoomlee</h3>
+          <p className="text-label-sm text-on-surface-variant">QM102</p>
+        </div>
       </div>
       <p>฿3,920.00</p>
       <span>/person</span>
