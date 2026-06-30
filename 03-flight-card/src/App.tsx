@@ -46,8 +46,10 @@ function App() {
         <span className="material-symbols-outlined text-[18px]">luggage</span>
         <span className="text-label-sm">20kg</span>
       </div>
-      <span>airline_seat_recline_normal</span>
-      <span>Economy</span>
+      <div className="flex items-center gap-xs">
+        <span className="material-symbols-outlined text-[18px]">airline_seat_recline_normal</span>
+        <span className="text-label-sm capitalize">Economy</span>
+      </div>
       <button>Select</button>
       <span>arrow_forward</span>
     </>
