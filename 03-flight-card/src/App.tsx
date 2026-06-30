@@ -52,8 +52,9 @@ function App() {
           <span className="text-label-sm capitalize">Economy</span>
         </div>
       </div>
-      <button>Select</button>
-      <span>arrow_forward</span>
+      <button className="bg-primary-container text-on-primary-container px-lg py-2 rounded-xl text-label-md flex items-center gap-xs active:scale-95 transition-all shadow-sm">
+        Select <span className="material-symbols-outlined text-[18px]">arrow_forward</span>
+      </button>
     </>
   )
 }
