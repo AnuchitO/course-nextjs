@@ -1,5 +1,4 @@
-function FlightCard() {
-  const takeoffIcon = "flight_takeoff"
+function FlightCard({ takeoffIcon }) {
   const airline = "Qoomlee"
   const flightNumber = "QM102"
   const price = "฿3,920.00"
